@@ -6,10 +6,11 @@ namespace MarkdownView.Forms.Plugin.Abstractions
 {
 	public class MarkdownView : WebView
 	{
+		private readonly string _baseUrl;
 		public MarkdownView (LinkRenderingOption linksOption = LinkRenderingOption.Underline)
 		{
-			var baseUrl = DependencyService.Get<IWebViewBaseUrl> ();
-
+			var baseUrlResolver = DependencyService.Get<IWebViewBaseUrl> ();
+			_baseUrl = baseUrlResolver.Url;
 
 			if (linksOption == LinkRenderingOption.Underline)
 				CommonMarkSettings.Default.OutputDelegate =
@@ -33,7 +34,7 @@ namespace MarkdownView.Forms.Plugin.Abstractions
 			set 
 			{ 
 				SetValue(StylesheetProperty, value); 
-				SwapStylesheet (value);
+				SetStylesheet (value);
 			}
 		}
 
@@ -57,14 +58,14 @@ namespace MarkdownView.Forms.Plugin.Abstractions
 				"function _sw(e){document.getElementById('_ss').setAttribute('href',e+'.css');}";
 			const string head = "<head><meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'><link id='_ss' rel='stylesheet' /><script>" + swapCssFunction + "</script></head>";
 
-			var htmlContent = "<body>" + CommonMarkConverter.Convert(Content) + "</body>";
+			var htmlContent = "<body>" + CommonMarkConverter.Convert(Markdown) + "</body>";
 
-			Source = new HtmlWebViewSource { Html = "<html>" + head + htmlContent + "</html>", BaseUrl = BaseUrl };
+			Source = new HtmlWebViewSource { Html = "<html>" + head + htmlContent + "</html>", BaseUrl = _baseUrl };
 
-			SwapStylesheet (Stylesheet);
+			SetStylesheet (Stylesheet);
 		}
 
-		void SwapStylesheet(string stylesheetName)
+		void SetStylesheet(string stylesheetName)
 		{
 			Eval("_sw(\"" + stylesheetName + "\")");
 		}
