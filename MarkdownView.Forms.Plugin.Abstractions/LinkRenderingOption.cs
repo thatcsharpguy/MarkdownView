@@ -1,4 +1,4 @@
-﻿namespace MarkdownView.Forms.Plugin.Abstractions
+﻿namespace ViewMarkdown.Forms.Plugin.Abstractions
 {
 	public enum LinkRenderingOption
 	{

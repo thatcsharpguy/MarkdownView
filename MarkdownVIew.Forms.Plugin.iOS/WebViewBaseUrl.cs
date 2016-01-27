@@ -1,9 +1,9 @@
-﻿using MarkdownView.Forms.Plugin.Abstractions;
-using MarkdownVIew.Forms.Plugin.iOS;
+﻿using ViewMarkdown.Forms.Plugin.Abstractions;
+using ViewMarkdown.Forms.Plugin.iOS;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(WebViewBaseUrl))]
-namespace MarkdownVIew.Forms.Plugin.iOS
+namespace ViewMarkdown.Forms.Plugin.iOS
 {
 	public class WebViewBaseUrl : IWebViewBaseUrl
 	{

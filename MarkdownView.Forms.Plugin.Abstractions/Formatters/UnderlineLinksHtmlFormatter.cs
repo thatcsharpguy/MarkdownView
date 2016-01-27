@@ -2,7 +2,7 @@
 using CommonMark.Syntax;
 using CommonMark;
 
-namespace MarkdownView.Forms.Plugin.Abstractions
+namespace ViewMarkdown.Forms.Plugin.Abstractions
 {
 	internal class UnderlineLinksHtmlFormatter: CommonMark.Formatters.HtmlFormatter
 	{

@@ -2,7 +2,7 @@
 using CommonMark;
 using CommonMark.Syntax;
 
-namespace MarkdownView.Forms.Plugin.Abstractions
+namespace ViewMarkdown.Forms.Plugin.Abstractions
 {
 	internal class NoneLinksHtmlFormatter: CommonMark.Formatters.HtmlFormatter
 	{

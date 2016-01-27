@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using CommonMark;
 
-namespace MarkdownView.Forms.Plugin.Abstractions
+namespace ViewMarkdown.Forms.Plugin.Abstractions
 {
 	public class MarkdownView : WebView
 	{
@@ -48,19 +48,19 @@ namespace MarkdownView.Forms.Plugin.Abstractions
 			set 
 			{ 
 				SetValue(MarkdownProperty, value); 
-				SetWebViewSourceFromMarkdown (value); 
+				SetWebViewSourceFromMarkdown (); 
 			}
 		}
 
-		private void SetWebViewSourceFromMarkdown(string markdown)
+		private void SetWebViewSourceFromMarkdown()
 		{
 			const string swapCssFunction =
 				"function _sw(e){document.getElementById('_ss').setAttribute('href',e+'.css');}";
 			const string head = "<head><meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'><link id='_ss' rel='stylesheet' /><script>" + swapCssFunction + "</script></head>";
 
-			var htmlContent = "<body>" + CommonMarkConverter.Convert(Markdown) + "</body>";
+			var body = "<body>" + CommonMarkConverter.Convert(Markdown) + "</body>";
 
-			Source = new HtmlWebViewSource { Html = "<html>" + head + htmlContent + "</html>", BaseUrl = _baseUrl };
+			Source = new HtmlWebViewSource { Html = "<html>" + head + body + "</html>", BaseUrl = _baseUrl };
 
 			SetStylesheet (Stylesheet);
 		}

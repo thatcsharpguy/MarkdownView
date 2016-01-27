@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -6,9 +6,9 @@
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{421B6D0C-9FCD-494D-8A4C-042EA97974EB}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>MarkdownVIew.Forms.Plugin.iOS</RootNamespace>
+    <RootNamespace>ViewMarkdown.Forms.Plugin.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>MarkdownVIew.Forms.Plugin.iOS</AssemblyName>
+    <AssemblyName>ViewMarkdown.Forms.Plugin.iOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,6 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+    <DocumentationFile>bin\Release\ViewMarkdown.Forms.Plugin.iOS.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -56,9 +57,9 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.0.1.6495\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.0.1.6495\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
   <ItemGroup>
-    <ProjectReference Include="..\MarkdownView.Forms.Plugin.Abstractions\MarkdownView.Forms.Plugin.Abstractions.csproj">
+    <ProjectReference Include="..\MarkdownView.Forms.Plugin.Abstractions\ViewMarkdown.Forms.Plugin.Abstractions.csproj">
       <Project>{B57D1D1B-5BE6-4045-81EE-9714FC846BE8}</Project>
-      <Name>MarkdownView.Forms.Plugin.Abstractions</Name>
+      <Name>ViewMarkdown.Forms.Plugin.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
