@@ -34,7 +34,7 @@ namespace ViewMarkdown.Forms.Plugin.Abstractions
 			set 
 			{ 
 				SetValue(StylesheetProperty, value); 
-				SetStylesheet (value);
+				SetStylesheet ();
 			}
 		}
 
@@ -62,12 +62,12 @@ namespace ViewMarkdown.Forms.Plugin.Abstractions
 
 			Source = new HtmlWebViewSource { Html = "<html>" + head + body + "</html>", BaseUrl = _baseUrl };
 
-			SetStylesheet (Stylesheet);
+			SetStylesheet ();
 		}
 
-		void SetStylesheet(string stylesheetName)
+		void SetStylesheet()
 		{
-			Eval("_sw(\"" + stylesheetName + "\")");
+			Eval("_sw(\"" + Stylesheet + "\")");
 		}
 	}
 }
