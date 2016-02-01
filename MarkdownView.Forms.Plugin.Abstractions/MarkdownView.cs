@@ -54,20 +54,34 @@ namespace ViewMarkdown.Forms.Plugin.Abstractions
 
 		private void SetWebViewSourceFromMarkdown()
 		{
-			const string swapCssFunction =
-				"function _sw(e){document.getElementById('_ss').setAttribute('href',e+'.css');}";
-			const string head = "<head><meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'><link id='_ss' rel='stylesheet' /><script>" + swapCssFunction + "</script></head>";
+			string swapCssFunction =
+                @"
+function _sw(e){ 
+    var cssFile = '" + _baseUrl + "'+e+'.css'; " +
+  @"document.getElementById('_ss').setAttribute('href',cssFile);
+}";
+			string head = @"
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
+    <link id='_ss' rel='stylesheet' href='#' >
+    <script>" + swapCssFunction + @"</script>
+</head>";
 
-			var body = "<body>" + CommonMarkConverter.Convert(Markdown) + "</body>";
+            var body = @"
+<body>" +
+    CommonMarkConverter.Convert(Markdown) + 
+"</body>";
 
 			Source = new HtmlWebViewSource { Html = "<html>" + head + body + "</html>", BaseUrl = _baseUrl };
 
-			SetStylesheet ();
+            SetStylesheet();
 		}
 
 		void SetStylesheet()
 		{
+            if (!String.IsNullOrEmpty(Stylesheet)) { 
 			Eval("_sw(\"" + Stylesheet + "\")");
+            }
 		}
 	}
 }
