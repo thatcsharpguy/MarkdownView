@@ -4,6 +4,9 @@ using CommonMark;
 
 namespace ViewMarkdown.Forms.Plugin.Abstractions
 {
+    /// <summary>
+    /// A formatter that will underline all link tags inside a markdown document
+    /// </summary>
 	internal class UnderlineLinksHtmlFormatter: CommonMark.Formatters.HtmlFormatter
 	{
 		public UnderlineLinksHtmlFormatter(System.IO.TextWriter target, CommonMarkSettings settings)

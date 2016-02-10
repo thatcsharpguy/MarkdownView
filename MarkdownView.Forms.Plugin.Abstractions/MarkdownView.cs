@@ -4,9 +4,17 @@ using CommonMark;
 
 namespace ViewMarkdown.Forms.Plugin.Abstractions
 {
+    /// <summary>
+    /// A View that presents Markdown content.
+    /// </summary>
     public class MarkdownView : WebView
     {
         private readonly string _baseUrl;
+
+        /// <summary>
+        /// Creates a new MarkdownView
+        /// </summary>
+        /// <param name="linksOption">Tells the view how to render links.</param>
         public MarkdownView(LinkRenderingOption linksOption = LinkRenderingOption.Underline)
         {
             var baseUrlResolver = DependencyService.Get<IWebViewBaseUrl>();
@@ -24,11 +32,17 @@ namespace ViewMarkdown.Forms.Plugin.Abstractions
 
         }
 
+        /// <summary>
+        /// Backing store for the MarkdownView.Stylesheet property
+        /// </summary>
         public static readonly BindableProperty StylesheetProperty =
-            BindableProperty.Create<MarkdownView, String>(
+            BindableProperty.Create<MarkdownView, string>(
                 p => p.Stylesheet, "");
 
-        public String Stylesheet
+        /// <summary>
+        /// Gets or sets the stylesheet that will be applied to the document
+        /// </summary>
+        public string Stylesheet
         {
             get { return (String)GetValue(StylesheetProperty); }
             set
@@ -38,11 +52,17 @@ namespace ViewMarkdown.Forms.Plugin.Abstractions
             }
         }
 
+        /// <summary>
+        /// Backing storage for the MarkdownView.Markdown property
+        /// </summary>
         public static readonly BindableProperty MarkdownProperty =
-            BindableProperty.Create<MarkdownView, String>(
+            BindableProperty.Create<MarkdownView, string>(
                 p => p.Markdown, "");
 
-        public String Markdown
+        /// <summary>
+        /// The markdown content
+        /// </summary>
+        public string Markdown
         {
             get { return (String)GetValue(MarkdownProperty); }
             set
@@ -77,7 +97,7 @@ function _sw(e){
             SetStylesheet();
         }
 
-        void SetStylesheet()
+        private void SetStylesheet()
         {
             if (!String.IsNullOrEmpty(Stylesheet))
             {

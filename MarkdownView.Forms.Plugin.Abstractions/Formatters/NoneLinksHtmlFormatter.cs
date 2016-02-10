@@ -4,6 +4,9 @@ using CommonMark.Syntax;
 
 namespace ViewMarkdown.Forms.Plugin.Abstractions
 {
+    /// <summary>
+    /// A formatter that will ignore all link tags inside a markdown document
+    /// </summary>
 	internal class NoneLinksHtmlFormatter: CommonMark.Formatters.HtmlFormatter
 	{
 		public NoneLinksHtmlFormatter(System.IO.TextWriter target, CommonMarkSettings settings)
@@ -20,7 +23,7 @@ namespace ViewMarkdown.Forms.Plugin.Abstractions
 
 				if (isOpening)
 				{
-					this.Write(inline.LiteralContent);
+                    Write(inline.LiteralContent);
 				}
 			}
 			else
