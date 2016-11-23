@@ -7,6 +7,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using ViewMarkdown.Forms.Plugin.Droid;
 
 namespace ViewMarkdown.Test.Droid
 {
@@ -21,6 +22,7 @@ namespace ViewMarkdown.Test.Droid
 			base.OnCreate(bundle);
 
 			global::Xamarin.Forms.Forms.Init(this, bundle);
+			MarkdownViewRenderer.Init();
 
 			LoadApplication(new App());
 		}
