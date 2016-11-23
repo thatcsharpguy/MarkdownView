@@ -2,9 +2,9 @@
 
 namespace ViewMarkdown.Test
 {
-	public partial class ViewMarkdown.TestPage : ContentPage
+	public partial class ViewMarkdownTestPage : ContentPage
 	{
-		public ViewMarkdown.TestPage ()
+		public ViewMarkdownTestPage ()
 		{
 			InitializeComponent();
 }

@@ -29,14 +29,14 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
-    <EmbeddedResource Include="ViewMarkdown.TestPage.xaml" />
+    <EmbeddedResource Include="ViewMarkdownTestPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewMarkdown.TestPage.xaml.cs">
-      <DependentUpon>ViewMarkdown.TestPage.xaml</DependentUpon>
+    <Compile Include="ViewMarkdownTestPage.xaml.cs">
+      <DependentUpon>ViewMarkdownTestPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

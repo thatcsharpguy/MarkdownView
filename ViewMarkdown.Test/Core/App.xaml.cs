@@ -8,7 +8,7 @@ namespace ViewMarkdown.Test
 		{
 			InitializeComponent();
 
-			MainPage = new ViewMarkdown.TestPage();
+			MainPage = new ViewMarkdownTestPage();
 		}
 
 		protected override void OnStart()
