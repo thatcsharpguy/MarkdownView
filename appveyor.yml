@@ -2,7 +2,7 @@ version: '0.1.0.{build}'
 before_build:
   - nuget restore
 artifacts:
-  - path: Jirapi.$(APPVEYOR_BUILD_VERSION).nupkg
+  - path: Xam.Plugins.Forms.MarkdownView.$(APPVEYOR_BUILD_VERSION).nupkg
     name: nuget_pack
 assembly_info:
   patch: true
