@@ -16,6 +16,11 @@ build:
   publish_nuget_symbols: false
   include_nuget_references: true
   verbosity: minimal
+after_build:
+- cmd: >-
+    nuget pack MarkdownView.nuspec -Build -IncludeReferencedProjects -Prop Configuration=Release
+
+    appveyor PushArtifact *.nupkg
 deploy:
   provider: NuGet
   api_key:
