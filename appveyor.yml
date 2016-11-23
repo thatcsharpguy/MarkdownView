@@ -20,8 +20,6 @@ build:
 after_build:
 - cmd: >-
     nuget pack ViewMarkdown.nuspec -Build -IncludeReferencedProjects -Prop Configuration=Release
-
-    appveyor PushArtifact *.nupkg
 deploy:
   provider: NuGet
   api_key:
