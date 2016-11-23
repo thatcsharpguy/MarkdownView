@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using ViewMarkdown.Forms.Plugin.Abstractions;
+using Xamarin.Forms;
 
 namespace ViewMarkdown.Test
 {
@@ -7,8 +8,19 @@ namespace ViewMarkdown.Test
 		public App()
 		{
 			InitializeComponent();
+			var _webView = new MarkdownView
+			{
+				Markdown = "# Hello",
+				VerticalOptions = LayoutOptions.FillAndExpand
+			};
 
-			MainPage = new ViewMarkdownTestPage();
+
+			MainPage = new ContentPage()
+			{
+				// Accomodate iPhone status bar.
+				Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0),
+				Content = _webView
+			};
 		}
 
 		protected override void OnStart()
