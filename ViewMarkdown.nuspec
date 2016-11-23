@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
-
       <id>Xam.Plugins.Forms.MarkdownView</id>
       <version>$version$</version>
       <title>MarkdownView Control Plugin for Xamarin.Forms</title>
@@ -68,23 +67,4 @@
 
 	 
    </files>
-</package>
-
-
-<?xml version="1.0"?>
-<package >
-  <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>Antonio Feregrino</authors>
-    <owners>That C# guy</owners>
-    <projectUrl>https://github.com/ThatCSharpGuy/Jirapi</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/ThatCSharpGuy/Jirapi/master/icon.png</iconUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <releaseNotes>location_area_encounter at Pokemon resource is back!.</releaseNotes>
-    <copyright>That C# guy, 2016</copyright>
-    <tags>Pokémon, PokéAPI</tags>
-  </metadata>
 </package>
