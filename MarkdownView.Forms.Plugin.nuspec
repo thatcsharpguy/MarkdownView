@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
-       <id>Xam.Plugins.Forms.MarkdownView</id>
-       <version>0.0.5.2</version>
-       <title>MarkdownView Control Plugin for Xamarin.Forms</title>
+
+      <id>Xam.Plugins.Forms.MarkdownView</id>
+      <version>$version$</version>
+      <title>MarkdownView Control Plugin for Xamarin.Forms</title>
        <authors>Antonio Feregrino Bolaños</authors>
        <owners>Antonio Feregrino Bolaños</owners>
        <projectUrl>https://github.com/ThatCSharpGuy/MarkdownView</projectUrl>
@@ -15,7 +16,7 @@
        <summary>Display markdown documents in your application.</summary>
        <tags>xamarin, pcl, xam.pcl, uwp, uwa, windows phone, winphone, wp8, android, xamarin.forms, ios</tags>
        <dependencies>
-         <dependency id="Xamarin.Forms" version="2.0.1.6495" />
+         <dependency id="Xamarin.Forms" version="2.3.3.168" />
          <dependency id="CommonMark.NET" version="0.11.0" />
        </dependencies>
    </metadata>
@@ -48,14 +49,14 @@
 	<file src="MarkdownView.Forms.Plugin.Abstractions\bin\Release\ViewMarkdown.Forms.Plugin.Abstractions.pdb" target="lib\wpa81\ViewMarkdown.Forms.Plugin.Abstractions.pdb" />
 	-->
 	
-     <!--Win Store-->
+     <!--Win Store
      <file src="MarkdownView.Forms.Plugin.WinStore\bin\Release\ViewMarkdown.Forms.Plugin.WinStore.dll" target="lib\win81\ViewMarkdown.Forms.Plugin.WinStore.dll" />
      <file src="MarkdownView.Forms.Plugin.WinStore\bin\Release\ViewMarkdown.Forms.Plugin.WinStore.xml" target="lib\win81\ViewMarkdown.Forms.Plugin.WinStore.xml" />
      <file src="MarkdownView.Forms.Plugin.WinStore\bin\Release\ViewMarkdown.Forms.Plugin.WinStore.pdb" target="lib\win81\ViewMarkdown.Forms.Plugin.WinStore.pdb" />
      <file src="MarkdownView.Forms.Plugin.Abstractions\bin\Release\ViewMarkdown.Forms.Plugin.Abstractions.dll" target="lib\win81\ViewMarkdown.Forms.Plugin.Abstractions.dll" />
      <file src="MarkdownView.Forms.Plugin.Abstractions\bin\Release\ViewMarkdown.Forms.Plugin.Abstractions.xml" target="lib\win81\ViewMarkdown.Forms.Plugin.Abstractions.xml" />
      <file src="MarkdownView.Forms.Plugin.Abstractions\bin\Release\ViewMarkdown.Forms.Plugin.Abstractions.pdb" target="lib\win81\ViewMarkdown.Forms.Plugin.Abstractions.pdb" />
-
+-->
 	<!--UWP
 	<file src="MarkdownView.Forms.Plugin.Uwp\bin\Release\ViewMarkdown.Forms.Plugin.Uwp.dll" target="lib\UAP10\ViewMarkdown.Forms.Plugin.Uwp.dll" />
 	<file src="MarkdownView.Forms.Plugin.Uwp\bin\Release\ViewMarkdown.Forms.Plugin.Uwp.xml" target="lib\UAP10\ViewMarkdown.Forms.Plugin.Uwp.xml" />
@@ -67,4 +68,23 @@
 
 	 
    </files>
+</package>
+
+
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Antonio Feregrino</authors>
+    <owners>That C# guy</owners>
+    <projectUrl>https://github.com/ThatCSharpGuy/Jirapi</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/ThatCSharpGuy/Jirapi/master/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>location_area_encounter at Pokemon resource is back!.</releaseNotes>
+    <copyright>That C# guy, 2016</copyright>
+    <tags>Pokémon, PokéAPI</tags>
+  </metadata>
 </package>
