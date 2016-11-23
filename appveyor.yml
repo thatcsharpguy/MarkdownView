@@ -18,7 +18,7 @@ build:
   verbosity: minimal
 after_build:
 - cmd: >-
-    nuget pack MarkdownView.nuspec -Build -IncludeReferencedProjects -Prop Configuration=Release
+    nuget pack ViewMarkdown.nuspec -Build -IncludeReferencedProjects -Prop Configuration=Release
 
     appveyor PushArtifact *.nupkg
 deploy:
