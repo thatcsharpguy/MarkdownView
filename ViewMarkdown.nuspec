@@ -11,6 +11,7 @@
        <requireLicenseAcceptance>false</requireLicenseAcceptance>
        <description>
             A wrapper around WebView that will allow your application to display Markdown documents with bindable content and custom stylesheets.
+			Built against XF 2.3.3.175
        </description>
        <summary>Display markdown documents in your application.</summary>
        <tags>xamarin, pcl, xam.pcl, uwp, uwa, windows phone, winphone, wp8, android, xamarin.forms, ios</tags>

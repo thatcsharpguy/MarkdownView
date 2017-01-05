@@ -3,7 +3,7 @@ configuration: Release
 before_build:
   - nuget restore
 artifacts:
-  - path: Xam.Plugins.Forms.MarkdownView.0.1.1.0.nupkg
+  - path: Xam.Plugins.Forms.MarkdownView.0.1.1.1.nupkg
     name: nuget_pack
 assembly_info:
   patch: true
