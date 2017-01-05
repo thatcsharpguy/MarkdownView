@@ -137,6 +137,20 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MarkdownView.Forms.Plugin.Abstractions\ViewMarkdown.Forms.Plugin.Abstractions.csproj">
+      <Project>{b57d1d1b-5be6-4045-81ee-9714fc846be8}</Project>
+      <Name>ViewMarkdown.Forms.Plugin.Abstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MarkdownView.Forms.Plugin.WinPhone\ViewMarkdown.Forms.Plugin.WinPhone.csproj">
+      <Project>{c126bc09-ac39-443f-83b7-b38e1d67bc00}</Project>
+      <Name>ViewMarkdown.Forms.Plugin.WinPhone</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\ViewMarkdown.Test.csproj">
+      <Project>{75bd7d6b-18a2-490d-ba1d-b1c7a33bebdb}</Project>
+      <Name>ViewMarkdown.Test</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

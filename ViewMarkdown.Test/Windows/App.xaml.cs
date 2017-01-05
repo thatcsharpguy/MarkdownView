@@ -42,13 +42,6 @@ namespace ViewMarkdown.Test.Windows
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
 
-#if DEBUG
-            if (System.Diagnostics.Debugger.IsAttached)
-            {
-                this.DebugSettings.EnableFrameRateCounter = true;
-            }
-#endif
-
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
@@ -63,6 +56,7 @@ namespace ViewMarkdown.Test.Windows
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
 
+                global::Xamarin.Forms.Forms.Init(e);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

@@ -10,7 +10,8 @@ namespace ViewMarkdown.Test
 			InitializeComponent();
 			var _webView = new MarkdownView
 			{
-				Markdown = "# Hello",
+				Markdown = @"# MarkdownView
+A control that allows you to show formatted markdown in your Xamarin Forms application.",
 				VerticalOptions = LayoutOptions.FillAndExpand
 			};
 
