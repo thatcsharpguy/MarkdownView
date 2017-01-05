@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
       <id>Xam.Plugins.Forms.MarkdownView</id>
-      <version>0.1.1.1</version>
+      <version>0.1.2.1</version>
       <title>MarkdownView Control Plugin for Xamarin.Forms</title>
        <authors>Antonio Feregrino Bolaños</authors>
        <owners>Antonio Feregrino Bolaños</owners>
@@ -40,31 +40,31 @@
      <file src="MarkdownView.Forms.Plugin.Abstractions\bin\Release\ViewMarkdown.Forms.Plugin.Abstractions.dll" target="lib\MonoTouch10\ViewMarkdown.Forms.Plugin.Abstractions.dll" />
      <file src="MarkdownView.Forms.Plugin.Abstractions\bin\Release\ViewMarkdown.Forms.Plugin.Abstractions.xml" target="lib\MonoTouch10\ViewMarkdown.Forms.Plugin.Abstractions.xml" />
 
-	<!--Win Phone RT
+	<!--Win Phone RT -->
 	<file src="MarkdownView.Forms.Plugin.WinPhone\bin\Release\ViewMarkdown.Forms.Plugin.WinPhone.dll" target="lib\wpa81\ViewMarkdown.Forms.Plugin.WinPhone.dll" />
 	<file src="MarkdownView.Forms.Plugin.WinPhone\bin\Release\ViewMarkdown.Forms.Plugin.WinPhone.xml" target="lib\wpa81\ViewMarkdown.Forms.Plugin.WinPhone.xml" />
 	<file src="MarkdownView.Forms.Plugin.WinPhone\bin\Release\ViewMarkdown.Forms.Plugin.WinPhone.pdb" target="lib\wpa81\ViewMarkdown.Forms.Plugin.WinPhone.pdb" />
 	<file src="MarkdownView.Forms.Plugin.Abstractions\bin\Release\ViewMarkdown.Forms.Plugin.Abstractions.dll" target="lib\wpa81\ViewMarkdown.Forms.Plugin.Abstractions.dll" />
 	<file src="MarkdownView.Forms.Plugin.Abstractions\bin\Release\ViewMarkdown.Forms.Plugin.Abstractions.xml" target="lib\wpa81\ViewMarkdown.Forms.Plugin.Abstractions.xml" />
 	<file src="MarkdownView.Forms.Plugin.Abstractions\bin\Release\ViewMarkdown.Forms.Plugin.Abstractions.pdb" target="lib\wpa81\ViewMarkdown.Forms.Plugin.Abstractions.pdb" />
-	-->
+
 	
-     <!--Win Store
+     <!--Win Store-->
      <file src="MarkdownView.Forms.Plugin.WinStore\bin\Release\ViewMarkdown.Forms.Plugin.WinStore.dll" target="lib\win81\ViewMarkdown.Forms.Plugin.WinStore.dll" />
      <file src="MarkdownView.Forms.Plugin.WinStore\bin\Release\ViewMarkdown.Forms.Plugin.WinStore.xml" target="lib\win81\ViewMarkdown.Forms.Plugin.WinStore.xml" />
      <file src="MarkdownView.Forms.Plugin.WinStore\bin\Release\ViewMarkdown.Forms.Plugin.WinStore.pdb" target="lib\win81\ViewMarkdown.Forms.Plugin.WinStore.pdb" />
      <file src="MarkdownView.Forms.Plugin.Abstractions\bin\Release\ViewMarkdown.Forms.Plugin.Abstractions.dll" target="lib\win81\ViewMarkdown.Forms.Plugin.Abstractions.dll" />
      <file src="MarkdownView.Forms.Plugin.Abstractions\bin\Release\ViewMarkdown.Forms.Plugin.Abstractions.xml" target="lib\win81\ViewMarkdown.Forms.Plugin.Abstractions.xml" />
      <file src="MarkdownView.Forms.Plugin.Abstractions\bin\Release\ViewMarkdown.Forms.Plugin.Abstractions.pdb" target="lib\win81\ViewMarkdown.Forms.Plugin.Abstractions.pdb" />
--->
-	<!--UWP
+
+	<!-- UWP -->
 	<file src="MarkdownView.Forms.Plugin.Uwp\bin\Release\ViewMarkdown.Forms.Plugin.Uwp.dll" target="lib\UAP10\ViewMarkdown.Forms.Plugin.Uwp.dll" />
 	<file src="MarkdownView.Forms.Plugin.Uwp\bin\Release\ViewMarkdown.Forms.Plugin.Uwp.xml" target="lib\UAP10\ViewMarkdown.Forms.Plugin.Uwp.xml" />
 	<file src="MarkdownView.Forms.Plugin.Uwp\bin\Release\ViewMarkdown.Forms.Plugin.Uwp.pdb" target="lib\UAP10\ViewMarkdown.Forms.Plugin.Uwp.pdb" />
 	<file src="MarkdownView.Forms.Plugin.Abstractions\bin\Release\ViewMarkdown.Forms.Plugin.Abstractions.dll" target="lib\UAP10\ViewMarkdown.Forms.Plugin.Abstractions.dll" />
 	<file src="MarkdownView.Forms.Plugin.Abstractions\bin\Release\ViewMarkdown.Forms.Plugin.Abstractions.xml" target="lib\UAP10\ViewMarkdown.Forms.Plugin.Abstractions.xml" />
 	<file src="MarkdownView.Forms.Plugin.Abstractions\bin\Release\ViewMarkdown.Forms.Plugin.Abstractions.pdb" target="lib\UAP10\ViewMarkdown.Forms.Plugin.Abstractions.pdb" />
-	-->
+	
 
 	 
    </files>
