@@ -18,7 +18,8 @@ namespace ViewMarkdown.Forms.Plugin.Abstractions
         public MarkdownView(LinkRenderingOption linksOption = LinkRenderingOption.Underline)
         {
             var baseUrlResolver = DependencyService.Get<IWebViewBaseUrl>();
-            _baseUrl = baseUrlResolver.Url;
+            if (baseUrlResolver != null)
+                _baseUrl = baseUrlResolver.Url;
 
             if (linksOption == LinkRenderingOption.Underline)
                 CommonMarkSettings.Default.OutputDelegate =
