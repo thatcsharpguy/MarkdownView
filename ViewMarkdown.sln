@@ -1,17 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26127.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewMarkdown.Forms.Plugin.Abstractions", "MarkdownView.Forms.Plugin.Abstractions\ViewMarkdown.Forms.Plugin.Abstractions.csproj", "{B57D1D1B-5BE6-4045-81EE-9714FC846BE8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewMarkdown.Forms.Plugin.iOS", "MarkdownView.Forms.Plugin.iOS\ViewMarkdown.Forms.Plugin.iOS.csproj", "{421B6D0C-9FCD-494D-8A4C-042EA97974EB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewMarkdown.Forms.Plugin.Droid", "MarkdownView.Forms.Plugin.Droid\ViewMarkdown.Forms.Plugin.Droid.csproj", "{015DA377-FD77-4463-8AB5-9E92B6217F35}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewMarkdown.Forms.Plugin.WinStore", "MarkdownView.Forms.Plugin.WinStore\ViewMarkdown.Forms.Plugin.WinStore.csproj", "{C146EE74-6563-489B-981F-164340C2A831}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewMarkdown.Forms.Plugin.WinPhone", "MarkdownView.Forms.Plugin.WinPhone\ViewMarkdown.Forms.Plugin.WinPhone.csproj", "{C126BC09-AC39-443F-83B7-B38E1D67BC00}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewMarkdown.Forms.Plugin.Uwp", "MarkdownView.Forms.Plugin.Uwp\ViewMarkdown.Forms.Plugin.Uwp.csproj", "{9A615A4D-B2B1-4578-BE6D-5425492FEFBE}"
 EndProject
@@ -57,36 +53,6 @@ Global
 		{015DA377-FD77-4463-8AB5-9E92B6217F35}.Release|ARM.ActiveCfg = Release|Any CPU
 		{015DA377-FD77-4463-8AB5-9E92B6217F35}.Release|x64.ActiveCfg = Release|Any CPU
 		{015DA377-FD77-4463-8AB5-9E92B6217F35}.Release|x86.ActiveCfg = Release|Any CPU
-		{C146EE74-6563-489B-981F-164340C2A831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C146EE74-6563-489B-981F-164340C2A831}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C146EE74-6563-489B-981F-164340C2A831}.Debug|ARM.ActiveCfg = Debug|ARM
-		{C146EE74-6563-489B-981F-164340C2A831}.Debug|ARM.Build.0 = Debug|ARM
-		{C146EE74-6563-489B-981F-164340C2A831}.Debug|x64.ActiveCfg = Debug|x64
-		{C146EE74-6563-489B-981F-164340C2A831}.Debug|x64.Build.0 = Debug|x64
-		{C146EE74-6563-489B-981F-164340C2A831}.Debug|x86.ActiveCfg = Debug|x86
-		{C146EE74-6563-489B-981F-164340C2A831}.Debug|x86.Build.0 = Debug|x86
-		{C146EE74-6563-489B-981F-164340C2A831}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C146EE74-6563-489B-981F-164340C2A831}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C146EE74-6563-489B-981F-164340C2A831}.Release|ARM.ActiveCfg = Release|ARM
-		{C146EE74-6563-489B-981F-164340C2A831}.Release|ARM.Build.0 = Release|ARM
-		{C146EE74-6563-489B-981F-164340C2A831}.Release|x64.ActiveCfg = Release|x64
-		{C146EE74-6563-489B-981F-164340C2A831}.Release|x64.Build.0 = Release|x64
-		{C146EE74-6563-489B-981F-164340C2A831}.Release|x86.ActiveCfg = Release|x86
-		{C146EE74-6563-489B-981F-164340C2A831}.Release|x86.Build.0 = Release|x86
-		{C126BC09-AC39-443F-83B7-B38E1D67BC00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C126BC09-AC39-443F-83B7-B38E1D67BC00}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C126BC09-AC39-443F-83B7-B38E1D67BC00}.Debug|ARM.ActiveCfg = Debug|ARM
-		{C126BC09-AC39-443F-83B7-B38E1D67BC00}.Debug|ARM.Build.0 = Debug|ARM
-		{C126BC09-AC39-443F-83B7-B38E1D67BC00}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{C126BC09-AC39-443F-83B7-B38E1D67BC00}.Debug|x86.ActiveCfg = Debug|x86
-		{C126BC09-AC39-443F-83B7-B38E1D67BC00}.Debug|x86.Build.0 = Debug|x86
-		{C126BC09-AC39-443F-83B7-B38E1D67BC00}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C126BC09-AC39-443F-83B7-B38E1D67BC00}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C126BC09-AC39-443F-83B7-B38E1D67BC00}.Release|ARM.ActiveCfg = Release|ARM
-		{C126BC09-AC39-443F-83B7-B38E1D67BC00}.Release|ARM.Build.0 = Release|ARM
-		{C126BC09-AC39-443F-83B7-B38E1D67BC00}.Release|x64.ActiveCfg = Release|Any CPU
-		{C126BC09-AC39-443F-83B7-B38E1D67BC00}.Release|x86.ActiveCfg = Release|x86
-		{C126BC09-AC39-443F-83B7-B38E1D67BC00}.Release|x86.Build.0 = Release|x86
 		{9A615A4D-B2B1-4578-BE6D-5425492FEFBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9A615A4D-B2B1-4578-BE6D-5425492FEFBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A615A4D-B2B1-4578-BE6D-5425492FEFBE}.Debug|ARM.ActiveCfg = Debug|Any CPU
