@@ -11,11 +11,16 @@ namespace ViewMarkdown.Forms.Plugin.Abstractions
     {
         private readonly string _baseUrl;
 
-        /// <summary>
-        /// Creates a new MarkdownView
-        /// </summary>
-        /// <param name="linksOption">Tells the view how to render links.</param>
-        public MarkdownView(LinkRenderingOption linksOption = LinkRenderingOption.Underline)
+		public MarkdownView() : this(LinkRenderingOption.Underline)
+		{
+
+		}
+
+		/// <summary>
+		/// Creates a new MarkdownView
+		/// </summary>
+		/// <param name="linksOption">Tells the view how to render links.</param>
+		public MarkdownView(LinkRenderingOption linksOption)
         {
             var baseUrlResolver = DependencyService.Get<IWebViewBaseUrl>();
             if (baseUrlResolver != null)

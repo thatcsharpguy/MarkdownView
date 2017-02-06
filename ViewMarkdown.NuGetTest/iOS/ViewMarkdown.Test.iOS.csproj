@@ -109,6 +109,9 @@
     <Reference Include="ViewMarkdown.Forms.Plugin.Abstractions">
       <HintPath>..\..\packages\Xam.Plugins.Forms.MarkdownView.0.2.0-pre\lib\portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\ViewMarkdown.Forms.Plugin.Abstractions.dll</HintPath>
     </Reference>
+    <Reference Include="ViewMarkdown.Forms.Plugin.iOS">
+      <HintPath>..\..\packages\Xam.Plugins.Forms.MarkdownView.0.2.0-pre\lib\MonoTouch10\ViewMarkdown.Forms.Plugin.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
